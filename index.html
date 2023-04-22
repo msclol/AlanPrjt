@@ -1,105 +1,99 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
   <head>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!--Import de la typographie-->
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <title>Copycat - Alan</title>
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link rel="stylesheet" href="css/reset.css" /> <!--Placer le fichier reset.css avant le style.css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!--Start: Import typo google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />  <!--End: Import typo google font-->
+    
+    <link rel="stylesheet" href="css/reset.css" />
+    <!--Placer le fichier reset.css avant le style.css-->
     <link rel="stylesheet" href="css/style.css" />
+     <title>Copycat - Alan</title>
   </head>
   <body>
-
     <!-- Start:  Menu-->
     <header class="header">
       <img class="header__image" src="images/alan_logo.png" alt="logo alan" />
 
       <nav class="header__nav">
-        <a class="header__link header__link--blue" href="">Découvrir les offres</a>
+        <a class="header__link header__link--blue" href=""
+          >Découvrir les offres</a
+        >
         <a class="header__link header__link--grey" href="">Me connecter</a>
       </nav>
     </header>
     <!-- End:  Menu-->
-   
-    <main>
-      <!-- Start:  First section-->
-      <section>
-        <!--Chaque section a un titre et un contenu contenu-->
-        <h1>Voici STD+, votre partenaire santé tout-en-un.</h1>
-        <p>
-          Prenez en main votre santé et celle de vos équipes ! Plus qu'une
-          assurance, Alan s'occupe de votre bien-être physique et mental au
-          quotidien.
-        </p>
-        <img
-          src="images/homepage-dashboard.png"
-          alt="Exemple du dashboard version ordinateur"
-          width="200px"
-        />
-        <img
-          src="images/homepage-mobile.png"
-          alt="Exemple du dashboard version mobile"
-          width="200px"
-        />
-      </section>
-      <!-- End:  First section-->
 
-      <!-- Start:  Second section-->
-      <section>
-        <h2>👋Nos offres pensées <strong> pour vous, avec vous </strong></h2>
-        <p>
-          Salarié(e) d'une entreprise qui a rejoint Alan?
-          <a href="#">découvrez comment vous inscrire </a>
-        </p>
-        <ul>
-          <li>
-            <div>
-              <img src="images/emoji-rocket.svg" alt="Emoji fusée" />
-              <h3>Startup &amp; PME</h3>
-            </div>
-            <p>
-              Gagnez un temps fou sur la gestion de votre santé et prenez soin
-              de vos salariés
-            </p>
-          </li>
-          <li>
-            <div>
-              <img src="images/emoji-building.svg" alt="Emoji building" />
-              <h3>Grandes entreprises</h3>
-            </div>
-            <p>
-              Avec Alan Entreprise, profitez d'une offre santé sur mesure, au
-              plus proche des besoins de vos collaborateurs.
-            </p>
-          </li>
-          <li>
-            <div>
-              <img src="images/emoji-restaurant.svg" alt="Emoji restaurant" />
-              <h3>Hotêls &amp; Restaurants</h3>
-            </div>
-            <p>
-              Simpllifiez-vous la gestion de l'assurance santé pour vos équipes
-              au quotidien e respectez toutes vos obligations CHR
-            </p>
-          </li>
-          <li>
-            <div>
-              <img src="images/emoji-painter.svg" alt="Emoji indépendant" />
-              <h3>Indépendants</h3>
-            </div>
-            <p>
-              Oubliez la paperasse et profitez d'une couverture santé complète
-              pour un reste à charge minimal
-            </p>
-          </li>
-        </ul>
-      </section>
-      <!-- End:  Second section-->
-    </main>
-  </body>
+    <main>
+
+            <!-- Start : First section -->
+            <section class="cover">
+                <div class="cover__flux flux">
+                    <div class="cover__container-texts">
+                        <h1>L'assurance santé qui fait simple.</h1>
+                        <p>14 000 entreprises de toutes tailles, des start-ups aux grandes entreprises, et des milliers d'indépendants font confiance à Alan pour leur protection santé.</p>
+                    </div>
+                    <div class="cover__container-images">
+                        <img src="images/homepage-dashboard.png" alt="Capture d'écran du tableau de bord version ordinateur" width="200px" />
+                        <img src="images/homepage-mobile.png" alt="Capture d'écran du tableau de bord version mobile" width="200px" />
+                    </div>
+                </div>
+                <video class="cover__video">
+                    <source src="videos/loop-video.mp4" type="video/mp4">
+                </video>
+            </section>
+            <!-- End : First section -->
+
+            <!-- Start : Second section -->
+            <section class="offers flux">
+                <h2>Nos offres pensées <strong>pour vous, avec vous</strong></h2>
+                <p>
+                    👋 Salarié(e) d'une entreprise qui a rejoint Alan ? 
+                    <a href="#">Découvrez comment vous inscrire</a>
+                </p>
+
+                <ul>
+                    <li>
+                        <div>
+                            <img src="images/emoji-rocket.svg" alt="Emoji fusée">
+                            <h3>Startups & PME</h3>
+                        </div>
+                        <p>Gagnez un temps fou sur la gestion de votre assurance santé et prenez soin de vos salariés.</p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/emoji-building.svg" alt="Emoji entreprise">
+                            <h3>Grandes entreprises</h3>
+                        </div>
+                        <p>Avec Alan Enterprise, profitez d'une offre santé sur-mesure, au plus proche des besoins de vos collaborateurs.</p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/emoji-restaurant.svg" alt="Emoji restaurant">
+                            <h3>Hôtels & Restaurants</h3>
+                        </div>
+                        <p>Simplifiez-vous la gestion de l'assurance santé pour vos équipes au quotidien et respectez toutes vos obligations CHR.</p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/emoji-painter.svg" alt="Emoji indépendants">
+                            <h3>Indépendants</h3>
+                        </div>
+                        <p>Oubliez la paperasse et profitez d'une couverture santé complète pour un reste à charge minimal.</p>
+                    </li>
+                </ul>
+            </section>
+            <!-- End : Second section -->
+
+        </main>
+
+    </body>
 </html>
