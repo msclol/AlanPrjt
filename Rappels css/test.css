@@ -1,0 +1,29 @@
+p:hover{
+    color: red;
+    text-decoration: underline;
+    
+}
+p:first-child{
+    color: green;
+}
+p:last-child{
+    color: purple;
+    border-bottom: 1px solid #ee0c0c;
+}
+
+p:nth-child(2){ /* Le 2ème élément de mon élément paragraphe  */
+    text-decoration:underline;
+}
+
+.ma-div p{ /* Tous les éléments p de classe ma-div*/
+    text-decoration:underline;
+    border: solid 2px grey;
+    background-color: #ed5353;
+}
+
+/*
+.underligne{
+    text-decoration:underline;
+
+}
+*/
