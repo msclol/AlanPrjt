@@ -1,0 +1,115 @@
+
+
+.ma-div{ /* */
+    border: solid 2px black;
+}
+
+.ma-div p{ /* Tous les éléments p de classe ma-div*/
+    background: red;
+   
+}
+
+/* Sélectionner un élément HTML qui vient après*/
+.ma-div + .mon-para{ 
+    background-color: yellow;
+}
+
+/*Sélectionner plusieurs éléments */
+.paragraphes,.ma-div, .mon-para {
+    border: dotted 1px blue;
+}
+/*Trouve toutes les sections qui on la classe .paragraphes*/
+section.paragraphes{
+    font-size: 24px;
+}
+
+/*
+Section numbers
+*/
+section.numbers{
+    background-color: bisque;
+}
+/*
+p:first-child{
+    color: green;
+    cursor: pointer;
+}
+p:last-child{
+    color: purple;
+    border-bottom: 1px solid #ee0c0c;
+}
+
+*/
+
+/*Selectionne tous les paragraphes multiples de 3 venant après .numbers*/
+.numbers p:nth-child(3n)/*ou even pour les pairs et odd pour les impairs ou encore (4n-1)*/{ 
+    color:red;
+}
+
+.numbers p:nth-child(1)/*ou even pour les pairs et odd pour les impairs ou encore (4n-1)*/{ 
+    text-decoration: underline;
+}
+
+/*
+Section list
+*/
+.list ul{
+    list-style: none;;
+}
+
+.list li{
+    background-color: lightcyan;
+    transition: background-color 0.5s ;
+}
+
+/*Les pseudo-éléments*/
+
+
+.list li:hover{
+    background-color: red;
+}
+
+.list li:before{
+    content: '<';
+
+}
+
+.list li:after{
+    content: '>';
+    
+}
+
+blockquote::before{
+    content:'"';
+    color:red;
+   
+}
+
+
+
+.list blockquote {
+    position: relative;
+}
+
+.list blockquote::before{
+    content:'<<';
+    color: blue;
+    position: absolute;
+    top:0;
+    left: 0;
+    font-size: 20px;
+    font-style: 50px;
+    opacity: 0.5;
+    transform: translateX(-50%) translateY(-50%) rotate(90deg);
+}
+
+.list blockquote::after{
+    content:'>>';
+    color: blue;
+}
+
+
+
+
+
+
